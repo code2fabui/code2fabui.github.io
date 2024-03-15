@@ -145,7 +145,7 @@
 
                 function callGPTAPI(buttonId) {
                     const text = document.getElementById('gpt-input').value;
-                    fetch('/api/call-gpt', {
+                    fetch('https://128.46.81.40:8880/code2fab', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({ text: text, button_id: buttonId })
